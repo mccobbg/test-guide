@@ -685,7 +685,7 @@
 		CB9FDC7015E9872E00B3713E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: West Interactive Corporation (75YX7HBDEV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 75YX7HBDEV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
