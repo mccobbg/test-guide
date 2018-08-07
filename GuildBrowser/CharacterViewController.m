@@ -41,7 +41,7 @@
         
         [self setNetworkActivityIndicatorVisible:NO];
         
-        _guild = guild;
+        self->_guild = guild;
 
         // set title
         self.title = guild.name;

@@ -64,23 +64,23 @@
         [self configureItemViews:characterWithDetails];
         
                                                
-       _averageItemLevel.text = [characterWithDetails.averageItemLevel stringValue];
-       _avgItemLevelEquipped.text = [characterWithDetails.averageItemLevelEquipped stringValue];
-       _selectedSpec.text = [NSString stringWithFormat: @"%@",characterWithDetails.classType];
+        self->_averageItemLevel.text = [characterWithDetails.averageItemLevel stringValue];
+        self->_avgItemLevelEquipped.text = [characterWithDetails.averageItemLevelEquipped stringValue];
+        self->_selectedSpec.text = [NSString stringWithFormat: @"%@",characterWithDetails.classType];
 
                                                
        // not every character has a title selected
        if (characterWithDetails.title) {
            // title has a %s in it, so convert NSString to a c string (1d array of char's)
            const char *namePtr = [characterWithDetails.name cStringUsingEncoding:NSUTF8StringEncoding];
-           _name.text = [NSString stringWithFormat:characterWithDetails.title, namePtr];
+           self->_name.text = [NSString stringWithFormat:characterWithDetails.title, namePtr];
        }        
         
     } error:^(NSError *error) {
         [self setNetworkActivityIndicatorVisible:NO];
         [self configureItemViews:nil];
         
-        NSString *errorMessage = [NSString stringWithFormat:@"There was a problem loading detail info for %@",_character.name];
+        NSString *errorMessage = [NSString stringWithFormat:@"There was a problem loading detail info for %@",self->_character.name];
         UIAlertView *loadAlert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:errorMessage
                                                            delegate:nil

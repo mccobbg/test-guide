@@ -414,6 +414,7 @@
 				TargetAttributes = {
 					CB9FDC3A15E9872D00B3713E = {
 						DevelopmentTeam = 75YX7HBDEV;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -665,12 +666,17 @@
 		CB9FDC6F15E9872E00B3713E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 75YX7HBDEV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
 				INFOPLIST_FILE = "GuildBrowser/GuildBrowser-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.west.GuildBrowser;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.west.GB;
 				PRODUCT_NAME = GuildBrowser;
+				PROVISIONING_PROFILE = "33e1e2c4-9bcc-4b91-8f84-78d8ee6a1f3a";
+				PROVISIONING_PROFILE_SPECIFIER = "com.west.GB Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -679,12 +685,17 @@
 		CB9FDC7015E9872E00B3713E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: West Interactive Corporation (75YX7HBDEV)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 75YX7HBDEV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
 				INFOPLIST_FILE = "GuildBrowser/GuildBrowser-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.west.GuildBrowser;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.west.GB;
 				PRODUCT_NAME = GuildBrowser;
+				PROVISIONING_PROFILE = "33e1e2c4-9bcc-4b91-8f84-78d8ee6a1f3a";
+				PROVISIONING_PROFILE_SPECIFIER = "com.west.GB Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
