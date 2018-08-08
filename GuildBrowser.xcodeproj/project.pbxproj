@@ -10,7 +10,6 @@
 		2C9BAE45211A4F4A0034FC8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9BAE3A211A37F50034FC8D /* XCTest.framework */; };
 		2C9BAE69211A8CE40034FC8D /* GuildBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BAE60211A8C400034FC8D /* GuildBrowserTests.m */; };
 		2C9BAE6A211A8CE80034FC8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE66211A8CDD0034FC8D /* InfoPlist.strings */; };
-		2C9BAE6B211A8CED0034FC8D /* GuildBrowserTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */; };
 		2CD1EE662118C10400824A0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1EE652118C10400824A0C /* Default-568h@2x.png */; };
 		CB9FDC4015E9872D00B3713E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
 		CB9FDC4215E9872D00B3713E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4115E9872D00B3713E /* Foundation.framework */; };
@@ -75,10 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C61AEBC211A8FCB00F2252A /* GuildBrowserTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GuildBrowserTests-Info.plist"; path = "GuildBrowserTests/Supporting Files/GuildBrowserTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2C9BAE3A211A37F50034FC8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2C9BAE5F211A8C400034FC8D /* GuildBrowserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuildBrowserTests.h; path = GuildBrowserTests/GuildBrowserTests.h; sourceTree = "<group>"; };
 		2C9BAE60211A8C400034FC8D /* GuildBrowserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuildBrowserTests.m; path = GuildBrowserTests/GuildBrowserTests.m; sourceTree = "<group>"; };
-		2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuildBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		2C9BAE67211A8CDD0034FC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = GuildBrowserTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		2CD1EE652118C10400824A0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CB9FDC3B15E9872D00B3713E /* GuildBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuildBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,9 +172,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9BAE45211A4F4A0034FC8D /* XCTest.framework in Frameworks */,
 				CB9FDC5F15E9872E00B3713E /* UIKit.framework in Frameworks */,
 				CB9FDC6015E9872E00B3713E /* Foundation.framework in Frameworks */,
-				2C9BAE45211A4F4A0034FC8D /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +194,8 @@
 		2C9BAE52211A621E0034FC8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C61AEBC211A8FCB00F2252A /* GuildBrowserTests-Info.plist */,
 				2C9BAE66211A8CDD0034FC8D /* InfoPlist.strings */,
-				2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,7 +391,6 @@
 				CB9FDC5715E9872E00B3713E /* Sources */,
 				CB9FDC5815E9872E00B3713E /* Frameworks */,
 				CB9FDC5915E9872E00B3713E /* Resources */,
-				CB9FDC5A15E9872E00B3713E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -476,27 +474,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9BAE6A211A8CE80034FC8D /* InfoPlist.strings in Resources */,
-				2C9BAE6B211A8CED0034FC8D /* GuildBrowserTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CB9FDC5A15E9872E00B3713E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB9FDC3715E9872D00B3713E /* Sources */ = {
@@ -711,13 +692,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuildBrowser.app/GuildBrowser";
 				DEVELOPMENT_TEAM = 75YX7HBDEV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"$(SDKROOT)//System/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GuildBrowserTests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GuildBrowserTests/Supporting Files/GuildBrowserTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.west.GBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -732,13 +715,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuildBrowser.app/GuildBrowser";
 				DEVELOPMENT_TEAM = 75YX7HBDEV;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"$(SDKROOT)//System/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GuildBrowserTests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GuildBrowserTests/Supporting Files/GuildBrowserTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.west.GBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
