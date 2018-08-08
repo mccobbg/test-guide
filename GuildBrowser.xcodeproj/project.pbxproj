@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C9BAE45211A4F4A0034FC8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9BAE3A211A37F50034FC8D /* XCTest.framework */; };
-		2C9BAE50211A61AA0034FC8D /* GuildBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BAE4E211A61AA0034FC8D /* GuildBrowserTests.m */; };
-		2C9BAE53211A62400034FC8D /* GuildBrowserTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE4F211A61AA0034FC8D /* GuildBrowserTests-Info.plist */; };
-		2C9BAE54211A62440034FC8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE51211A61AE0034FC8D /* InfoPlist.strings */; };
+		2C9BAE69211A8CE40034FC8D /* GuildBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BAE60211A8C400034FC8D /* GuildBrowserTests.m */; };
+		2C9BAE6A211A8CE80034FC8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE66211A8CDD0034FC8D /* InfoPlist.strings */; };
+		2C9BAE6B211A8CED0034FC8D /* GuildBrowserTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */; };
 		2CD1EE662118C10400824A0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CD1EE652118C10400824A0C /* Default-568h@2x.png */; };
 		CB9FDC4015E9872D00B3713E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
 		CB9FDC4215E9872D00B3713E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4115E9872D00B3713E /* Foundation.framework */; };
@@ -76,10 +76,10 @@
 
 /* Begin PBXFileReference section */
 		2C9BAE3A211A37F50034FC8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2C9BAE4D211A61AA0034FC8D /* GuildBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuildBrowserTests.h; sourceTree = "<group>"; };
-		2C9BAE4E211A61AA0034FC8D /* GuildBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuildBrowserTests.m; sourceTree = "<group>"; };
-		2C9BAE4F211A61AA0034FC8D /* GuildBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuildBrowserTests-Info.plist"; sourceTree = "<group>"; };
-		2C9BAE51211A61AE0034FC8D /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		2C9BAE5F211A8C400034FC8D /* GuildBrowserTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuildBrowserTests.h; path = GuildBrowserTests/GuildBrowserTests.h; sourceTree = "<group>"; };
+		2C9BAE60211A8C400034FC8D /* GuildBrowserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuildBrowserTests.m; path = GuildBrowserTests/GuildBrowserTests.m; sourceTree = "<group>"; };
+		2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuildBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		2C9BAE67211A8CDD0034FC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = GuildBrowserTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		2CD1EE652118C10400824A0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CB9FDC3B15E9872D00B3713E /* GuildBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuildBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9FDC3F15E9872D00B3713E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -185,9 +185,9 @@
 		2C9BAE4A211A61640034FC8D /* GuildBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
+				2C9BAE5F211A8C400034FC8D /* GuildBrowserTests.h */,
+				2C9BAE60211A8C400034FC8D /* GuildBrowserTests.m */,
 				2C9BAE52211A621E0034FC8D /* Supporting Files */,
-				2C9BAE4D211A61AA0034FC8D /* GuildBrowserTests.h */,
-				2C9BAE4E211A61AA0034FC8D /* GuildBrowserTests.m */,
 			);
 			name = GuildBrowserTests;
 			sourceTree = "<group>";
@@ -195,8 +195,8 @@
 		2C9BAE52211A621E0034FC8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2C9BAE4F211A61AA0034FC8D /* GuildBrowserTests-Info.plist */,
-				2C9BAE51211A61AE0034FC8D /* InfoPlist.strings */,
+				2C9BAE66211A8CDD0034FC8D /* InfoPlist.strings */,
+				2C9BAE62211A8C510034FC8D /* GuildBrowserTests-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -475,8 +475,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9BAE53211A62400034FC8D /* GuildBrowserTests-Info.plist in Resources */,
-				2C9BAE54211A62440034FC8D /* InfoPlist.strings in Resources */,
+				2C9BAE6A211A8CE80034FC8D /* InfoPlist.strings in Resources */,
+				2C9BAE6B211A8CED0034FC8D /* GuildBrowserTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9BAE50211A61AA0034FC8D /* GuildBrowserTests.m in Sources */,
+				2C9BAE69211A8CE40034FC8D /* GuildBrowserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +548,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2C9BAE66211A8CDD0034FC8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9BAE67211A8CDD0034FC8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		CB9FDC4815E9872D00B3713E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -709,7 +717,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/New Group/Supporting Files/GuildBrowserTests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GuildBrowserTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.west.GBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -730,7 +738,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/New Group/Supporting Files/GuildBrowserTests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/GuildBrowserTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.west.GBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
